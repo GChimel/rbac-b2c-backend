@@ -1,10 +1,10 @@
 services:
-  api-restaurante-pg:
+  studies:
     image: postgres
-    container_name: estudos
+    container_name: rbca
     ports:
       - "5432:5432"
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: live006
+      POSTGRES_DB: pg
