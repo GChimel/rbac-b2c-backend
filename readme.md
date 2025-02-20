@@ -44,13 +44,18 @@ Ensure **Docker** and **Docker Compose** are installed. Then run:
 docker-compose up -d
 ```
 
-### 4️⃣ Run Migrations
+### 4️⃣ Create a .env file in the root of the app
+
+- DATABASE_URL="pgconnectionstring"
+- JWT_SECRET="jwtsecretkey"
+
+### 5️⃣ Run Migrations
 
 ```sh
 npx prisma migrate dev
 ```
 
-### 5️⃣ Start the Server
+### 6️⃣ Start the Server
 
 ```sh
 yarn dev
