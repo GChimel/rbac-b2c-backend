@@ -36,18 +36,18 @@ cd rbac-b2c-backend
 yarn
 ```
 
-### 3️⃣ Start Services with Docker
+### 3️⃣ Create a .env file in the root of the app
+
+- DATABASE_URL="pgconnectionstring"
+- JWT_SECRET="jwtsecretkey"
+
+### 4️⃣ Start Services with Docker
 
 Ensure **Docker** and **Docker Compose** are installed. Then run:
 
 ```sh
 docker-compose up -d
 ```
-
-### 4️⃣ Create a .env file in the root of the app
-
-- DATABASE_URL="pgconnectionstring"
-- JWT_SECRET="jwtsecretkey"
 
 ### 5️⃣ Run Migrations
 
